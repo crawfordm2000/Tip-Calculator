@@ -10,13 +10,14 @@
     <script src="https://unpkg.com/onsenui/js/onsenui.min.js"></script>
 </head>
 <body>
+    <!-- Since the app is small, I have opted to place the styles within the html itself -->
     <ons-page> 
         <ons-toolbar>
-            <div class="center">FrameWork Tip Calculator</div>
+            <div class="center">Tip Calculator</div>
         </ons-toolbar>
         <section style="padding: 8px;">
             <div style="margin-bottom: 20px;">
-                <input type="text" class="text-input text-input--material" placeholder="Bill Amount">
+                <input type="text" class="text-input text-input--material" placeholder="Bill Amount" style="width: 100%" required id="billAmount">
             </div>
             <div style="margin-bottom: 20px;">
                 <ons-range style="width: 75%;" value="18" min="0" max="50" step=".5" id="tipRange">
